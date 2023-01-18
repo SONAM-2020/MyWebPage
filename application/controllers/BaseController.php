@@ -9,9 +9,9 @@ class BaseController extends CI_Controller {
 	}
 	function loadpage($param1="",$param2=""){
         //die($param1);
-        if($param1=="aboutus" || $param1=="faq"){
+        if($param1=="contactus" || $param1=="faq"){
             $page_data['linktype']=$param1;
-            $this->load->view('web/pages/headerLinkDetails', $page_data);   
+            $this->load->view('web/contactus', $page_data);   
         }
         if($param1=="voice"){
             $page_data['linktype']=$param1;
